@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# freemium-funnel
-=======
 # 🎵 Freemium Funnel Project — KKBOX User Analytics  
 
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-blue.svg)](https://www.postgresql.org/) 
@@ -98,8 +95,9 @@ Visual exports:
 ## 📸 Example Screenshots
 Example outputs from pgAdmin queries:
 
-- Churn by plan → `churn_rate.png`  
-- Retention cohort → `retention_pct_result.png`
+![Churn by plan](sql_results/churn_rate.png)
+![Retention cohort](sql_results/retention_pct_result.png)
+
 
 ---
 
@@ -125,6 +123,3 @@ Example outputs from pgAdmin queries:
 
 ## 📄 License
 This project is licensed under the MIT License.
->>>>>>> e48888a (Stage 1: freemium-to-paid funnel Stage 1: SQL)
-# freemium-funnel
-# freemium-funnel
