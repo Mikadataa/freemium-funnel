@@ -1,0 +1,49 @@
+Dataset Description — Freemium Funnel Project (Stage 1)
+
+Source:
+KKBOX Churn Prediction Challenge (Kaggle) — subset of files used for this analysis.
+
+Tables:
+
+1) users
+Fields:
+- user_id (text) → unique identifier for each user.
+- signup_ts (timestamp) → signup datetime.
+- channel (bigint) → signup channel (encoded numeric).
+- country (nullable).
+- device (nullable).
+
+Notes: Derived from members_v3.csv (signup_ts, channel retained).
+
+2) subscriptions
+Fields:
+- user_id (text).
+- start_ts (timestamp) → subscription start datetime.
+- cancel_ts (timestamp, nullable) → if set, user cancelled this subscription.
+- plan (int) → subscription plan length in days (e.g., 30, 90).
+- price (numeric) → amount paid.
+
+Notes: Derived from transactions_v2.csv.
+
+3) events
+Fields:
+- user_id (text).
+- event_ts (timestamp).
+- event_type (text) → session_start, activate, subscribe, etc.
+- device, source (nullable).
+
+Notes: Derived from user_logs_v2.csv, aggregated into higher-level events.
+
+Output files (in sql_results/):
+- churn_by_channel.csv
+- churn_by_plan.csv
+- churn_rate.csv
+- conversion_funnel.csv
+- funnel_by_signup_channel.csv
+- funnel_by_plan_of_first_subscription.csv
+- retention_by_channel.csv
+- Retention_pct_result.csv
+- churn_rate.png (visual)
+- retention_pct_result.png (visual)
+
+These datasets represent the foundation for Stage 1 (SQL/Postgres analysis).

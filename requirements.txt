@@ -1,0 +1,9 @@
+pandas==2.2.2
+numpy==1.26.4
+matplotlib==3.8.4
+plotly==5.23.0
+sqlalchemy==2.0.32
+psycopg2-binary==2.9.9
+faker==25.9.1
+streamlit==1.37.1
+jupyter==1.0.0

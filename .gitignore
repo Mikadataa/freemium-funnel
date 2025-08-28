@@ -1,0 +1,39 @@
+# Data (large)
+data/
+!data/README.md
+
+# SQL results - allow only docs & small images
+sql_results/*.zip
+sql_results/*.parquet
+sql_results/*.csv
+!sql_results/*.md
+!sql_results/*.png
+!sql_results/*.jpg
+!sql_results/*.jpeg
+
+# Logs
+*.log
+
+# Python cache / build
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Jupyter / VS Code
+.ipynb_checkpoints/
+.vscode/
+*.code-workspace
+
+# Local secrets
+.streamlit/
+
+# OS files
+.DS_Store
+Thumbs.db
